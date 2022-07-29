@@ -1330,28 +1330,60 @@ else:
     <script scriptType="python"><![CDATA[]]></script>
   </tool>
 
-  <toolshelf name="shelf_1" label="New Shelf">
-    <memberTool name="test"/>
-    <memberTool name="tool_3"/>
-  </toolshelf>
+  <shelfSetEdit name="shelf_set_1" fileLocation="C:/PROGRA~1/SIDEEF~1/HOUDIN~1.657/houdini/toolbar/ShelfDefinitions.shelf">
+    <addMemberToolshelf name="pipeline" inPosition="15"/>
+    <removeMemberToolshelf name="create" fromPosition="0"/>
+    <removeMemberToolshelf name="modify" fromPosition="0"/>
+    <removeMemberToolshelf name="model" fromPosition="0"/>
+    <removeMemberToolshelf name="polygon" fromPosition="0"/>
+    <removeMemberToolshelf name="deform" fromPosition="0"/>
+    <removeMemberToolshelf name="texture" fromPosition="0"/>
+    <removeMemberToolshelf name="rigging" fromPosition="0"/>
+    <removeMemberToolshelf name="characters" fromPosition="0"/>
+    <removeMemberToolshelf name="constraints" fromPosition="0"/>
+    <removeMemberToolshelf name="groomtools" fromPosition="0"/>
+    <removeMemberToolshelf name="guidemodify" fromPosition="0"/>
+    <removeMemberToolshelf name="terrainfx" fromPosition="0"/>
+    <removeMemberToolshelf name="simplefx" fromPosition="0"/>
+    <removeMemberToolshelf name="cloud" fromPosition="0"/>
+    <removeMemberToolshelf name="volume" fromPosition="0"/>
+    <addMemberToolshelf name="summerschool_modules" inPosition="1"/>
+  </shelfSetEdit>
 
-  <tool name="tool_3" label="New Tool" icon="PLASMA_App">
-    <script scriptType="python"><![CDATA[]]></script>
-  </tool>
+  <toolshelfEdit name="lights_and_cameras" fileLocation="C:/PROGRA~1/SIDEEF~1/HOUDIN~1.657/houdini/toolbar/ShelfDefinitions.shelf">
+    <removeMemberTool name="object_cam" fromPosition="0"/>
+    <removeMemberTool name="object_pointlight" fromPosition="0"/>
+    <removeMemberTool name="object_spotlight" fromPosition="0"/>
+    <removeMemberTool name="object_arealight" fromPosition="0"/>
+    <removeMemberTool name="obj_geolight" fromPosition="0"/>
+    <removeMemberTool name="obj_volumelight" fromPosition="0"/>
+    <removeMemberTool name="object_distantlight" fromPosition="0"/>
+    <removeMemberTool name="object_envlight" fromPosition="0"/>
+    <removeMemberTool name="obj_skylight" fromPosition="0"/>
+    <removeMemberTool name="obj_gilight" fromPosition="0"/>
+    <removeMemberTool name="obj_causticlight" fromPosition="0"/>
+    <removeMemberTool name="obj_portallight" fromPosition="0"/>
+    <removeMemberTool name="object_ambient" fromPosition="0"/>
+    <removeMemberTool name="object_stereocamrig" fromPosition="0"/>
+    <removeMemberTool name="object_vrcam" fromPosition="0"/>
+    <removeMemberTool name="object_switcher" fromPosition="0"/>
+    <removeMemberTool name="obj_gamepadcamera" fromPosition="0"/>
+  </toolshelfEdit>
 
-  <toolshelf name="shelf_2" label="New Shelf"/>
-
-  <toolshelf name="shelf_3" label="New Shelf">
-    <memberTool name="tool_4"/>
-  </toolshelf>
-
-  <tool name="tool_4" label="a" icon="PLASMA_App">
-    <script scriptType="python"><![CDATA[import hou
-
-hou.ui.displayMessage('testing')]]></script>
-  </tool>
-
-  <shelfSetEdit name="shelf_set_1" fileLocation="/opt/hfs19.5/houdini/toolbar/ShelfDefinitions.shelf">
-    <addMemberToolshelf name="shelf_3" inPosition="15"/>
+  <shelfSetEdit name="shelf_set_2" fileLocation="C:/PROGRA~1/SIDEEF~1/HOUDIN~1.657/houdini/toolbar/ShelfDefinitions.master_shelf">
+    <removeMemberToolshelf name="collisions" fromPosition="1"/>
+    <removeMemberToolshelf name="particles" fromPosition="1"/>
+    <removeMemberToolshelf name="grains" fromPosition="1"/>
+    <removeMemberToolshelf name="lights_and_cameras" fromPosition="0"/>
+    <removeMemberToolshelf name="rbd_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="liquid_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="melting_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="ocean" fromPosition="1"/>
+    <removeMemberToolshelf name="sparse_pyro_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="solid_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="wire_dynamics" fromPosition="1"/>
+    <removeMemberToolshelf name="crowds" fromPosition="1"/>
+    <removeMemberToolshelf name="drive_simulation" fromPosition="1"/>
+    <removeMemberToolshelf name="vellum" fromPosition="0"/>
   </shelfSetEdit>
 </shelfDocument>
